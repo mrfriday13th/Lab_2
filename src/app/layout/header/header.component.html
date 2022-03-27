@@ -1,0 +1,79 @@
+
+  <!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+     <img src="https://imgs.search.brave.com/orko78mMHsNlP-Mx_jADbxn03r-61uy57tF4Qz1iTMc/rs:fit:567:215:1/g:ce/aHR0cHM6Ly9mcHQu/ZWR1LnZuL0NvbnRl/bnQvaW1hZ2VzL2Fz/c2V0cy9Qb2x5LnBu/Zw" style="width:100%" alt="">
+      <span class="logo_name"></span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/product">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Product</span>
+          </a>
+        </li>
+        <li>
+          <a lass="nav-link "routerLink="/students">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Student</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link"  routerLink="/user">
+            <i class='bx bx-user'></i>
+            <span class="links_name">User</span>
+          </a>
+        </li>
+        
+        <li>
+          <a class="nav-link " routerLink="/login">
+            <i class='bx bx-book-open' ></i>
+			<span class="links_name" >Login</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      
+      
+     
+    </nav>
+
+   
+  </section>
+
+  <script>
+	let sidebar = document.querySelector(".sidebar");
+ let sidebarBtn = document.querySelector(".sidebarBtn");
+ sidebarBtn.onclick = function() {
+   sidebar.classList.toggle("active");
+   if(sidebar.classList.contains("active")){
+   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+ }else
+   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+ }
+  </script>
+ 
+ </body>
+ </html>
